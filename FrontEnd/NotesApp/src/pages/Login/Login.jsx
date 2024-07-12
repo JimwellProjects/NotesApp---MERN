@@ -28,7 +28,6 @@ const Login = () => {
     setError("");
 
     // Login API Call
-
     try {
       const response = await axiosInstance.post("/login", {
         email: email,
@@ -49,14 +48,12 @@ const Login = () => {
         setError("An unexpected error occured. Please try again");
       }
     }
-
-
   };
 
   
-  return <>
-    <Navbar />
-
+  return(
+    <>
+    {/* <Navbar /> */}
     <div className='flex items-center justify-center mt-28'>
       <div className='w-96 border rounded bg-white px-7 py-10'>
         <form onSubmit={handleLogin}>
@@ -89,9 +86,8 @@ const Login = () => {
         </form>
       </div>
     </div>
-
-
-  </>;
+  </>
+  );
 };
 
 export default Login

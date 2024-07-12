@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     'react/jsx-no-target-blank': 'off',
     // 'no-unused-vars': ['error', { 'varsIgnorePattern': 'React' }],
-    'no-unused-vars': 'off', // Disables warnings for unused variables
+    'no-unused-vars': 'on', // Disables warnings for unused variables
     'no-unused-imports': 'off', // Disables warnings for unused imports (if using a plugin that supports this)
     'react-refresh/only-export-components': [
       'warn',
